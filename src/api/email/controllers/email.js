@@ -13,7 +13,7 @@ module.exports = createCoreController("api::email.email", ({ strapi }) => ({
     try {
       await strapi.plugins["email"].services.email.send({
         to: process.env.RECIPIENT_EMAIL_ADDRESS,
-        from: "saadmarwan16@gmail.com",
+        from: process.env.SENDER_EMAIL_ADDRESS,
         subject: `New Message from ${query.first_name} ${
           query.last_name ?? ""
         }`,
