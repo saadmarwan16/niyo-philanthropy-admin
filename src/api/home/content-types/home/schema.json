@@ -1,0 +1,96 @@
+{
+  "kind": "singleType",
+  "collectionName": "homes",
+  "info": {
+    "singularName": "home",
+    "pluralName": "homes",
+    "displayName": "Home",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "mission": {
+      "type": "text",
+      "required": true,
+      "minLength": 40
+    },
+    "vision": {
+      "type": "text",
+      "minLength": 40,
+      "required": true
+    },
+    "slogan": {
+      "type": "text",
+      "required": true
+    },
+    "company_description": {
+      "type": "text",
+      "required": true,
+      "minLength": 40
+    },
+    "email": {
+      "type": "email",
+      "required": true
+    },
+    "phone_number": {
+      "type": "string",
+      "required": true
+    },
+    "physical_address": {
+      "type": "text",
+      "required": true
+    },
+    "categories_title": {
+      "type": "string",
+      "required": true
+    },
+    "categories_description": {
+      "type": "text",
+      "minLength": 40,
+      "required": true
+    },
+    "making_difference_children_description": {
+      "type": "text",
+      "required": true,
+      "minLength": 40
+    },
+    "making_difference_medical_description": {
+      "type": "text",
+      "required": true,
+      "minLength": 40
+    },
+    "making_difference_donation_description": {
+      "type": "text",
+      "required": true,
+      "minLength": 40
+    },
+    "categories_medicine_description": {
+      "type": "text",
+      "required": true,
+      "minLength": 40
+    },
+    "categories_human_description": {
+      "type": "text",
+      "required": true,
+      "minLength": 40
+    },
+    "categories_study_description": {
+      "type": "text",
+      "required": true,
+      "minLength": 40
+    },
+    "categories_food_description": {
+      "type": "text",
+      "required": true,
+      "minLength": 40
+    },
+    "campaigns": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::campaign.campaign"
+    }
+  }
+}
