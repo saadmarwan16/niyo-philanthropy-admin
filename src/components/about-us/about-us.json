@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_about_us_aboutuses",
+  "info": {
+    "displayName": "AboutUs",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "who_we_are": {
+      "type": "text",
+      "required": true
+    },
+    "what_we_do": {
+      "type": "text",
+      "required": true
+    }
+  }
+}

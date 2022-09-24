@@ -4,7 +4,8 @@
   "info": {
     "singularName": "campaign",
     "pluralName": "campaigns",
-    "displayName": "Campaign"
+    "displayName": "Campaign",
+    "description": ""
   },
   "options": {
     "draftAndPublish": false
@@ -14,11 +15,6 @@
     "title": {
       "type": "string",
       "required": true
-    },
-    "description": {
-      "type": "text",
-      "required": true,
-      "minLength": 40
     },
     "target": {
       "type": "decimal",
@@ -31,11 +27,54 @@
       "min": 0
     },
     "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
+    },
+    "body": {
+      "type": "richtext",
+      "required": true
+    },
+    "conclusion": {
+      "type": "richtext"
+    },
+    "time_to_read": {
+      "type": "integer",
+      "required": true
+    },
+    "introduction": {
+      "type": "text",
+      "minLength": 25
+    },
+    "category": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::category.category"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title",
+      "required": true
+    },
+    "footer": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::footer.footer"
+    },
+    "donations": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::donation.donation",
+      "mappedBy": "campaign"
+    },
+    "subscriptions": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::subscription.subscription",
+      "mappedBy": "campaign"
     }
   }
 }

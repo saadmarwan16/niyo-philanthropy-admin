@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_achievements_achievements",
+  "info": {
+    "displayName": "Achievements"
+  },
+  "options": {},
+  "attributes": {
+    "monthly_donation_amount": {
+      "type": "decimal",
+      "required": true,
+      "min": 0
+    },
+    "donations_received": {
+      "type": "integer",
+      "required": true,
+      "min": 0
+    },
+    "active_campaigns": {
+      "type": "integer",
+      "required": true,
+      "min": 0
+    }
+  }
+}

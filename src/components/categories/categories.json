@@ -1,0 +1,35 @@
+{
+  "collectionName": "components_categories_categories",
+  "info": {
+    "displayName": "Categories",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "maxLength": 60
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    },
+    "human": {
+      "type": "text",
+      "required": true
+    },
+    "medicine": {
+      "type": "text",
+      "required": true
+    },
+    "study": {
+      "type": "text",
+      "required": true
+    },
+    "food": {
+      "type": "text",
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_mission_and_vision_mission_and_visions",
+  "info": {
+    "displayName": "MissionAndVision",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "our_mission": {
+      "type": "text",
+      "required": true
+    },
+    "our_vision": {
+      "type": "text",
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "collectionName": "components_making_difference_making_differences",
+  "info": {
+    "displayName": "MakingDifference",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "description": {
+      "type": "component",
+      "repeatable": false,
+      "component": "description.description"
+    },
+    "image1": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "image2": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "image3": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "children": {
+      "type": "text",
+      "required": true
+    },
+    "medicine": {
+      "type": "text",
+      "required": true
+    },
+    "donation": {
+      "type": "text",
+      "required": true
+    }
+  }
+}
