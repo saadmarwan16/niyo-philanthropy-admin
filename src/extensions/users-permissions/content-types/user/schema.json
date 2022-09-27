@@ -86,11 +86,11 @@
       "target": "api::donation.donation",
       "mappedBy": "donor"
     },
-    "subscriptions": {
+    "receipts": {
       "type": "relation",
       "relation": "oneToMany",
-      "target": "api::subscription.subscription",
-      "mappedBy": "doner"
+      "target": "api::receipt.receipt",
+      "mappedBy": "owner"
     }
   }
 }

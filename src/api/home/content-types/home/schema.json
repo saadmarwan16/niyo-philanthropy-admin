@@ -12,15 +12,6 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "slogan": {
-      "type": "text",
-      "required": true
-    },
-    "company_description": {
-      "type": "text",
-      "required": true,
-      "minLength": 40
-    },
     "campaigns": {
       "type": "relation",
       "relation": "oneToMany",
@@ -55,6 +46,11 @@
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::footer.footer"
+    },
+    "hero_details": {
+      "type": "component",
+      "repeatable": false,
+      "component": "home-hero-details.home-hero-details"
     }
   }
 }

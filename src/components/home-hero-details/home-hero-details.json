@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_home_hero_details_home_hero_details",
+  "info": {
+    "displayName": "Home-hero-details"
+  },
+  "options": {},
+  "attributes": {
+    "detail1": {
+      "type": "component",
+      "repeatable": false,
+      "component": "home-hero-detail.home-hero-detail"
+    },
+    "detail2": {
+      "type": "component",
+      "repeatable": false,
+      "component": "home-hero-detail.home-hero-detail"
+    },
+    "detail3": {
+      "type": "component",
+      "repeatable": false,
+      "component": "home-hero-detail.home-hero-detail"
+    }
+  }
+}

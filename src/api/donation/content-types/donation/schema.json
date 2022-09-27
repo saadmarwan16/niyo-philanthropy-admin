@@ -36,6 +36,17 @@
       "relation": "manyToOne",
       "target": "api::campaign.campaign",
       "inversedBy": "donations"
+    },
+    "checkout_session": {
+      "type": "string",
+      "required": false
+    },
+    "donation_type": {
+      "type": "enumeration",
+      "enum": [
+        "checkout",
+        "wallet"
+      ]
     }
   }
 }

@@ -70,11 +70,10 @@
       "target": "api::donation.donation",
       "mappedBy": "campaign"
     },
-    "subscriptions": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::subscription.subscription",
-      "mappedBy": "campaign"
+    "completed": {
+      "type": "boolean",
+      "default": false,
+      "required": true
     }
   }
 }

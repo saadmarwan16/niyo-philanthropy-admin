@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_home_hero_detail_home_hero_details",
+  "info": {
+    "displayName": "Home-hero-detail"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "minLength": 10
+    },
+    "description": {
+      "type": "text",
+      "required": true,
+      "minLength": 25
+    },
+    "hero_image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    }
+  }
+}
