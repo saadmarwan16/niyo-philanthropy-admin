@@ -1,6 +1,13 @@
 module.exports = ({ env }) => {
   if (env("NODE_ENV") === "production") {
     return {
+      "users-permissions": {
+        config: {
+          jwt: {
+            expiresIn: "7d",
+          },
+        },
+      },
       upload: {
         config: {
           provider: "cloudinary",
@@ -28,6 +35,13 @@ module.exports = ({ env }) => {
   }
 
   return {
+    "users-permissions": {
+      config: {
+        jwt: {
+          expiresIn: "7d",
+        },
+      },
+    },
     email: {
       config: {
         provider: "sendgrid",
