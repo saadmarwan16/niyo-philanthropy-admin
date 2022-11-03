@@ -26,11 +26,13 @@
     },
     "body": {
       "type": "richtext",
-      "required": true
+      "required": true,
+      "minLength": 150
     },
     "conclusion": {
       "type": "richtext",
-      "required": true
+      "required": false,
+      "minLength": 25
     },
     "time_to_read": {
       "type": "integer",
@@ -38,7 +40,7 @@
     },
     "introduction": {
       "type": "text",
-      "required": true,
+      "required": false,
       "minLength": 25
     },
     "footer": {

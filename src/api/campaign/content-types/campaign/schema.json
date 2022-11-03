@@ -36,10 +36,12 @@
     },
     "body": {
       "type": "richtext",
-      "required": true
+      "required": true,
+      "minLength": 150
     },
     "conclusion": {
-      "type": "richtext"
+      "type": "richtext",
+      "minLength": 25
     },
     "time_to_read": {
       "type": "integer",
